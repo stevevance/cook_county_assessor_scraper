@@ -9,7 +9,7 @@ class PropertyinfoSpider(CSVFeedSpider):
     name = "assessor"
     allowed_domains = ["cookcountyassessor.com"]
     start_urls = [
-	    "file:///Volumes/Macintosh HD/Users/stevevance/Sites/cook_county_assessor_scraper/pins_list_unique.csv"
+	    "https://github.com/stevevance/cook_county_assessor_scraper/blob/master/pins_list_unique.csv?raw=true"
     ]
     
     state = OrderedDict()
