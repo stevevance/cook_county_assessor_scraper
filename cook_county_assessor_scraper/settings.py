@@ -18,3 +18,4 @@ MEMDEBUG_ENABLED = True
 DEFAULT_REQUEST_HEADERS = {
     'Referer': 'http://www.cookcountyassessor.com/'
 }
+DOWNLOAD_HANDLERS: {'s3': None}
