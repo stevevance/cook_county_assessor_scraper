@@ -13,6 +13,7 @@ class Property(scrapy.Item):
     
     property_tax_year = scrapy.Field()
     taxcode = scrapy.Field()
+    neighborhood = scrapy.Field()
     address = scrapy.Field()
     city = scrapy.Field()
     township = scrapy.Field()

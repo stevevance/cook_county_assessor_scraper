@@ -9,7 +9,7 @@ class PropertyinfoSpider(CSVFeedSpider):
     name = "assessor"
     allowed_domains = ["cookcountyassessor.com"]
     start_urls = [
-	    "https://raw.githubusercontent.com/stevevance/cook_county_assessor_scraper/master/pins_list_imported.csv"
+	    "http://stevevance.net/scrapy/assessor/pins_no_data_021118_sample.csv"
     ]
     
     state = OrderedDict()
@@ -36,6 +36,7 @@ class PropertyinfoSpider(CSVFeedSpider):
             item['property_tax_year'] = int(item['property_tax_year'][-4:])
             
         item['taxcode'] = self.extract_with_prefix(response, 'lblPropInfoTaxcode')
+        item['neighborhood'] = self.extract_with_prefix(response, 'lblPropInfoNBHD')
 
         item['pin'] = self.extract_with_prefix(response, 'lblPropInfoPIN')
         item['address'] = self.extract_with_prefix(response, 'lblPropInfoAddress')
