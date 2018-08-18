@@ -9,8 +9,8 @@ class PropertyinfoSpider(CSVFeedSpider):
     name = "assessor"
     allowed_domains = ["cookcountyassessor.com"]
     start_urls = [
-	    #"http://stevevance.net/scrapy/assessor/pins_no_data_021118_sample.csv"
-	    "file:///Users/stevevance/Sites/cook_county_assessor_scraper/pins_no_data_021118.csv"
+	    "http://chicagocityscape.com/scrapy/batch1.csv"
+	    "http://chicagocityscape.com/scrapy/batch2.csv"
     ]
     
     state = OrderedDict()
