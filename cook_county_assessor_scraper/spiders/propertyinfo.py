@@ -9,7 +9,6 @@ class PropertyinfoSpider(CSVFeedSpider):
     name = "assessor"
     allowed_domains = ["cookcountyassessor.com"]
     start_urls = [
-	    "http://chicagocityscape.com/scrapy/batch1.csv",
 	    "http://chicagocityscape.com/scrapy/batch2.csv"
     ]
     
