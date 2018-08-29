@@ -18,3 +18,5 @@ cd cook_county_assessor_scraper
 scrapy crawl propertyinfo -o properties.json -t jsonlines -L INFO
 # The output will be in properties.json
 ```
+
+Check in on the status with `telnet localhost 6023` and then `est()`. Use `exit()` to exit [Scrapy's Telnet console](https://doc.scrapy.org/en/latest/topics/telnetconsole.html).
